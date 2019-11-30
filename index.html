@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tinyone Project</title>
+    <link rel="stylesheet" href="Bariol_Regular.otf">
+    <link rel="stylesheet" href="Bariol_Regular_Italic.otf">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        @import url();
+
+        fon {
+            margin: 0;
+            padding: 0;
+        }
+
+        #main_section {}
+
+        .container {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-family: Myriad Pro;
+        }
+
+        h2 {
+            font-family: Myriad Pro;
+        }
+
+        p {
+            font-family: Myriad Pro;
+        }
+
+        /*------------------------------------------*/
+
+        .navigation_section {
+            background-color: #F56262;
+        }
+
+        .header_area {
+            padding: 25px 0;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .logo_area {
+            flex-basis: 30%;
+            max-width: 30%;
+        }
+
+        .logo_area img {}
+
+        .nav_area {
+            max-width: 70%;
+            flex-basis: 70%;
+        }
+
+        nav {
+            margin-left: 54px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin-top: 25px;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /*------------------------------------------*/
+
+        .slider_section {
+            background-color: #EB4F4E;
+            padding-top: 50px;
+        }
+
+        .txt_area {}
+
+        .txt_area h1 {
+            font-family: Myriad Pro;
+            text-align: center;
+            margin: 0;
+            font-size: 60px;
+            color: white;
+        }
+
+        .txt_area p {
+            font-family: Myriad Pro;
+            text-align: center;
+            margin: 0;
+            font-size: 20px;
+            color: white;
+        }
+
+        .img_area {
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+            padding-top: 70px;
+            height: 385px;
+        }
+
+        .slider1 {
+            position: absolute;
+        }
+
+        .slider2 {
+            position: relative;
+            left: 50%;
+        }
+
+        .img_area img {}
+
+        .slider3 {
+            position: relative;
+            left: 18%;
+            top: -97%;
+        }
+
+        /*------------------------------------------*/
+
+        .smart_section {
+            background: #232324;
+            overflow: hidden;
+            padding-top: 45px;
+            height: 360px;
+        }
+
+        .smart_text_area {}
+
+        .smart_text_area h1 {
+            text-align: center;
+            font-size: 40px;
+            color: white;
+            font-family: Myriad Pro;
+            margin: 0;
+        }
+
+        .smart_text_area p {
+            text-align: center;
+            font-size: 20px;
+            color: #D84948;
+            font-family: Myriad Pro;
+            margin: 0;
+            padding-top: 12px;
+        }
+
+        .smart_service_area_total {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 40px;
+        }
+
+        .smart_service_area {
+            flex-basis: 33.33%;
+        }
+
+        .smart_service_area_img {
+            display: flex;
+            justify-content: center;
+        }
+
+        .smart_service_area_img img {}
+
+        .smart_service_area_txt {
+            padding: 0 48px;
+        }
+
+        .smart_service_area_txt h1 {
+            font-size: 29px;
+            color: white;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .smart_service_area_txt p {
+            font-size: 18px;
+            color: #D84948;
+            text-align: center;
+            margin: 0;
+        }
+
+        /*------------------------------------------*/
+        .talented_section {
+            background-color: #6CC372;
+            overflow: hidden;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+
+        .talented_txt_area {
+            text-align: center;
+        }
+
+        .talented_txt_area h1 {
+            font-size: 40px;
+            color: white;
+            margin: 0;
+        }
+
+        .talented_txt_area p {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .talented_service_area_total {
+            display: flex;
+            flex-wrap: wrap;
+            padding-top: 30px;
+        }
+
+        .talented_service_area_part {
+            flex-basis: 24%;
+            background: #FFFFFF;
+            margin-right: 9px;
+        }
+
+        .talented_service_area_img {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+        }
+
+        .talented_service_area_img img {}
+
+        .talented_service_area_txt {
+            text-align: center;
+        }
+
+        .talented_service_area_txt h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #6CC372;
+            padding-top: 20px;
+        }
+
+        .talented_service_area_txt p {
+            font-size: 20px;
+            margin: 0;
+            color: #E04438;
+            padding: 14px;
+        }
+
+        .talented_service_area_button {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        .talented_service_area_button button {
+            background: #6CC372;
+            padding: 3px 45px;
+            /* padding-left: 0; */
+        }
+
+        .talented_service_area_button button i {
+            color: white;
+            font-size: 25px;
+            padding-left: 0;
+            padding-right: 14px;
+        }
+
+        .talented_service_area_button button a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        /*------------------------------------------*/
+        .elegent_section {
+            background: #F0F0F0;
+        }
+
+        .elegent_area_total {}
+
+        .elegent_area_txt {
+            text-align: center;
+            padding-top: 35px;
+        }
+
+        .elegent_area_txt h1 {
+            font-size: 40px;
+            color: #616161;
+            margin: 0;
+        }
+
+        .elegent_area_txt p {
+            font-size: 20px;
+            margin: 0;
+            color: #6CC372;
+        }
+
+        .elegent_area_img_total {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 200px;
+            /* position: absolute; */
+        }
+
+        .elegent_area_img_part {
+            flex-basis: 25%;
+            padding-top: 40px;
+        }
+
+        .elegent_area_img_part img {}
+
+        .elegent_area_img_part h2 {
+            padding-left: 27px;
+            font-size: 19px;
+        }
+
+
+        .full_width_border {}
+
+        .full_width_border hr {
+            margin: 0;
+            color: #D8D8D8;
+        }
+
+        /*------------------------------------------*/
+        .price_section {
+            background: #FFFFFF;
+        }
+
+        .price_area_total {}
+
+        .price_area_img_total {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .price_area_img_part {
+            flex-basis: 33.33%;
+        }
+
+        .price_area_img_part img {
+            top: -27.5%;
+            position: relative;
+        }
+
+        .price_area_txt {
+            text-align: center;
+            color: #EB4F4E;
+            width: 100%;
+        }
+
+        .price_area_txt p {
+            position: relative;
+            top: -260%;
+            margin: 0;
+        }
+
+        /*------------------------------------------*/
+        .tweets_section {
+            background: #EB4F4E;
+            padding-top: 45px;
+            padding-bottom: 20px;
+        }
+
+        .tweets_text_area {
+            text-align: center;
+        }
+
+        .tweets_text_area h1 {
+            font-size: 48px;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        .tweets_text_area h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .tweets_text_area i {
+            font-size: 30px;
+            color: white;
+        }
+
+        .tweets_text_area2 p {
+            text-align: justify;
+            font-style: italic;
+            padding: 0 80px;
+            color: white;
+        }
+
+        .tweets_text_area2 p a {
+
+            text-decoration: none;
+
+            color: black;
+        }
+
+        /*------------------------------------------*/
+
+        .footer_section {
+            background: black;
+            overflow: hidden;
+        }
+
+        .footer_total {}
+
+        footer {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer_txt {
+            flex-basis: 40%;
+        }
+
+        .footer_txt p {
+            margin: 0;
+            color: white;
+            margin-top: 23px;
+        }
+
+        .footer_txt p a {
+            margin: 0;
+            text-decoration: none;
+            color: #EB4F4E;
+        }
+
+        .footer_icon {
+            color: white;
+            flex-basis: 60%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .footer_icon i {
+            font-size: 22px;
+            background: #EB4F4E;
+            padding: 5px;
+            margin: 15px 6px;
+            border-radius: 2px;
+        }
+
+        /*------------------------------------------*/
+        .map_section {}
+
+        .map_area_total {
+
+            width: 99.737%;
+        }
+
+        iframe {
+
+            width: 100%;
+
+            height: 250px;
+        }
+
+        /*------------------------------------------*/
+    </style>
+
+</head>
+
+<body>
+
+    <section id="main_section">
+        <!------------------------------------------------------------------------------------------------------------------>
+        <section class="navigation_section">
+            <div class="container">
+                <div class="header_area">
+                    <header>
+                        <div class="logo_area">
+                            <img src="logo.png" alt="">
+                        </div>
+                        <div class="nav_area">
+                            <nav>
+                                <ul>
+                                    <li><a href="http://www.facebook.com/abu.bokor27" target="_blank">Home</a></li>
+                                    <li><a href="http://www.facebook.com/abu.bokor27" target="_blank">About</a></li>
+                                    <li><a href="http://www.facebook.com/abu.bokor27" target="_blank">Team</a></li>
+                                    <li><a href="http://www.facebook.com/abu.bokor27" target="_blank">Protfolio</a></li>
+                                    <li><a href="http://www.facebook.com/abu.bokor27" target="_blank">Other</a></li>
+                                    <li><a href="http://www.facebook.com/abu.bokor27" target="_blank">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------>
+        <section class="slider_section">
+            <div class="container">
+                <div class="txt_area">
+                    <h1>Welcome to Motion</h1>
+                    <p>Asmart & Creative Single Page Template</p>
+                </div>
+                <div class="img_area">
+                    <div class="slider1">
+                        <img src="slider_1.png" alt="">
+                    </div>
+                    <div class="slider2">
+                        <img src="slider_2.png" alt="">
+                    </div>
+                    <div class="slider3">
+                        <img src="slider_3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------>
+        <section class="smart_section">
+            <div class="container">
+                <div class="smart_text_area">
+                    <h1>Smart & Creative </h1>
+                    <p>This is why you will use it :)</p>
+                </div>
+                <div class="smart_service_area_total">
+                    <div class="smart_service_area">
+                        <div class="smart_service_area_img">
+                            <img src="multi.png" alt="">
+                        </div>
+                        <div class="smart_service_area_txt">
+                            <h1>Multi purpose</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
+                        </div>
+                    </div>
+                    <div class="smart_service_area">
+                        <div class="smart_service_area_img">
+                            <img src="flat.png" alt="">
+                        </div>
+                        <div class="smart_service_area_txt">
+                            <h1>Flat UI</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
+                        </div>
+                    </div>
+                    <div class="smart_service_area">
+                        <div class="smart_service_area_img">
+                            <img src="creative.png" alt="">
+                        </div>
+                        <div class="smart_service_area_txt">
+                            <h1>Creative Design</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------>
+        <section class="talented_section">
+            <div class="container">
+                <div class="talented_txt_area">
+                    <h1>Talented & Experts</h1>
+                    <p>This is our team :)</p>
+                </div>
+                <div class="talented_service_area_total">
+                    <div class="talented_service_area_part">
+                        <div class="talented_service_area_img">
+                            <img src="person_one.png" alt="">
+                        </div>
+                        <div class="talented_service_area_txt">
+                            <h1>Mahmoud Baghagho</h1>
+                            <p>Senior UI Designer</p>
+                        </div>
+                        <div class="talented_service_area_button">
+                            <button>
+                                <i class="fa fa-twitter"></i>
+                                <a href="http://www.facebook.com/abu.bokor27" target="_blank">Follow</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="talented_service_area_part">
+                        <div class="talented_service_area_img">
+                            <img src="person_two.png" alt="">
+                        </div>
+                        <div class="talented_service_area_txt">
+                            <h1>Abd ElRahman </h1>
+                            <p>Senior App Developer</p>
+                        </div>
+                        <div class="talented_service_area_button">
+                            <button>
+                                <i class="fa fa-twitter"></i>
+                                <a href="http://www.facebook.com/abu.bokor27" target="_blank">Follow</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="talented_service_area_part">
+                        <div class="talented_service_area_img">
+                            <img src="person_three.png" alt="">
+                        </div>
+                        <div class="talented_service_area_txt">
+                            <h1>Mostafa Amin</h1>
+                            <p>Senior Graphic Designer</p>
+                        </div>
+                        <div class="talented_service_area_button">
+                            <button>
+                                <i class="fa fa-twitter"></i>
+                                <a href="http://www.facebook.com/abu.bokor27" target="_blank">Follow</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="talented_service_area_part">
+                        <div class="talented_service_area_img">
+                            <img src="person_four.png" alt="">
+                        </div>
+                        <div class="talented_service_area_txt">
+                            <h1>Ahmed Ali</h1>
+                            <p>Senior Web Developer</p>
+                        </div>
+                        <div class="talented_service_area_button">
+                            <button>
+                                <i class="fa fa-twitter"></i>
+                                <a href="http://www.facebook.com/abu.bokor27" target="_blank">Follow</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------>
+        <section class="elegent_section">
+            <div class="container">
+                <div class="elegent_area_total">
+                    <div class="elegent_area_txt">
+                        <h1>Elegant & Genuine</h1>
+                        <p>This is how our works looks like :)</p>
+                    </div>
+                    <div class="elegent_area_img_total">
+                        <div class="elegent_area_img_part">
+                            <img src="sms.png" alt="">
+                            <h2>SMS Clouds</h2>
+                        </div>
+                        <div class="elegent_area_img_part">
+                            <img src="blue.png" alt="">
+                            <h2>Blue Apple Soft</h2>
+                        </div>
+                        <div class="elegent_area_img_part">
+                            <img src="togather.png" alt="">
+                            <h2>Together Application</h2>
+                        </div>
+                        <div class="elegent_area_img_part">
+                            <img src="fcbarselona.png" alt="">
+                            <h2>FCBarcelona Club</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------>
+        <section class="price_section">
+            <div class="full_width_border">
+                <hr>
+            </div>
+            <div class="container">
+                <div class="price_area_total">
+                    <div class="price_area_img_total">
+                        <div class="price_area_img_part">
+                            <img src="professional.png" alt="">
+                        </div>
+                        <div class="price_area_img_part">
+                            <img src="startup.png" alt="">
+                        </div>
+                        <div class="price_area_img_part">
+                            <img src="professional.png" alt="">
+                        </div>
+                        <div class="price_area_txt">
+                            <p>And more available plans for all needs .... Check here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------>
+        <section class="tweets_section">
+            <div class="container">
+                <div class="tweets_text_area">
+                    <h1>Latest Tweets</h1>
+                    <h2>This is how to keep in touch :)</h2>
+                    <i class="fa fa-twitter"></i>
+                </div>
+                <div class="tweets_text_area2">
+                    <p>
+                        <a href="">@ Abd-Alrahaman Elgazzar</a> Great work Abd-Alrahaman , I really love the application ... hope you haveall the luck in ur life .. also have alook here <a href="http://www.t.co/zfdgfdg">http://t.co/zfdgfdg</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------>
+        <section class="footer_section">
+            <div class="container">
+                <div class="">
+                    <footer class="footer_total">
+                        <div class="footer_txt">
+                            <p>© 2013 <a href="">Motion Template</a>. Design by Begha</p>
+                        </div>
+                        <div class="footer_icon">
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-wifi"></i>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------>
+        <section class="map_section">
+            <div class="map_area_total">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.868595558843!2d91.78549061495772!3d22.47157178523487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acd6fe9a3a4473%3A0x7836276aef538552!2sUniversity%20of%20Chittagong!5e0!3m2!1sen!2sbd!4v1575129219871!5m2!1sen!2sbd"></iframe>
+            </div>
+        </section>
+        <!------------------------------------------------------------------------------------------------------------------>
+    </section>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
